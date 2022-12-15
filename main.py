@@ -14,7 +14,12 @@ def x3_1(x):
 
 
 def collatz(x):
-    pass
+    while x != 1:
+        if x % 2 == 0:
+            return x2(x)
+        else:
+            return x3_1(x)
+    print('Список:', list)
 
 
 input_num()
